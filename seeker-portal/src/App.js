@@ -14,7 +14,7 @@ function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
     <div
-      role="tabpanel" className='tab-panel'
+      role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
@@ -51,94 +51,97 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="tabs" className='tabs'>
+      <Box>
+        <Tabs value={value} onChange={handleChange} aria-label="tabs" className='tabs-list'>
           <Tab label="Jobs" {...a11yProps(0)} />
           <Tab label="Scholarships" {...a11yProps(1)} />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={0} className="tabs-panel">
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12, sm: 8, md: 12 }}>
           <Grid item xs={12} sm={4} md={4}>
             <Card sx={{ display: 'flex' }} className='tabs-card'>
               <img src={logo} className="card-image" alt="logo" />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography component="div" variant="h5">
+                <CardContent sx={{ flex: '1 0 auto' }} className='tabs-card-contet'>
+                  <Typography component="h2" className='card-title'>
                     Data Entry Operator
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     UrbanTech
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     Delhi, India (Remote)
                   </Typography>
-                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" color="text.secondary" component="div" >
+                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" component="div" className='card-sub-title2'>
                     Posted By National Career Service
-                    <div className='time'>4hrs ago</div>
+                    <span className='time'>4hrs ago</span>
                   </Typography>
                 </CardContent>
               </Box>
             </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Card sx={{ display: 'flex'}} className='tabs-card'>
+          <Card sx={{ display: 'flex' }} className='tabs-card'>
               <img src={logo} className="card-image" alt="logo" />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography component="div" variant="h5">
+                <CardContent sx={{ flex: '1 0 auto' }} className='tabs-card-contet'>
+                  <Typography component="h2" className='card-title'>
                     Data Entry Operator
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     UrbanTech
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     Delhi, India (Remote)
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" component="div" className='card-sub-title2'>
                     Posted By National Career Service
+                    <span className='time'>8hrs ago</span>
                   </Typography>
                 </CardContent>
               </Box>
             </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Card sx={{ display: 'flex'}} className='tabs-card'>
+          <Card sx={{ display: 'flex' }} className='tabs-card'>
               <img src={logo} className="card-image" alt="logo" />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography component="div" variant="h5">
+                <CardContent sx={{ flex: '1 0 auto' }} className='tabs-card-contet'>
+                  <Typography component="h2" className='card-title'>
                     Data Entry Operator
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     UrbanTech
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     Delhi, India (Remote)
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" component="div" className='card-sub-title2'>
                     Posted By National Career Service
+                    <span className='time'>12hrs ago</span>
                   </Typography>
                 </CardContent>
               </Box>
             </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={4}>
-            <Card sx={{ display: 'flex'}} className='tabs-card'>
+          <Card sx={{ display: 'flex' }} className='tabs-card'>
               <img src={logo} className="card-image" alt="logo" />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography component="div" variant="h5">
+                <CardContent sx={{ flex: '1 0 auto' }} className='tabs-card-contet'>
+                  <Typography component="h2" className='card-title'>
                     Data Entry Operator
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     UrbanTech
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     Delhi, India (Remote)
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" component="div" className='card-sub-title2'>
                     Posted By National Career Service
+                    <span className='time'>2hrs ago</span>
                   </Typography>
                 </CardContent>
               </Box>
@@ -146,25 +149,25 @@ export default function BasicTabs() {
           </Grid>
         </Grid>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel value={value} index={1} className="tabs-panel">
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12, sm: 8, md: 12 }}>
           <Grid item xs={12} sm={4} md={4}>
-            <Card sx={{ display: 'flex' }} className='tabs-card'>
+          <Card sx={{ display: 'flex' }} className='tabs-card'>
               <img src={logo} className="card-image" alt="logo" />
               <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                <CardContent sx={{ flex: '1 0 auto' }}>
-                  <Typography component="div" variant="h5">
+                <CardContent sx={{ flex: '1 0 auto' }} className='tabs-card-contet'>
+                  <Typography component="h2" className='card-title'>
                     Data Entry Operator
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     UrbanTech
                   </Typography>
-                  <Typography variant="subtitle1" color="text.secondary" component="div">
+                  <Typography component="h4" className='card-sub-title'>
                     Delhi, India (Remote)
                   </Typography>
-                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" color="text.secondary" component="div" >
+                  <Typography sx={{ display: 'flex', justifyContent: 'space-between' }} variant="subtitle1" component="div" className='card-sub-title2'>
                     Posted By National Career Service
-                    <div className='time'>4hrs ago</div>
+                    <span className='time'>6hrs ago</span>
                   </Typography>
                 </CardContent>
               </Box>
