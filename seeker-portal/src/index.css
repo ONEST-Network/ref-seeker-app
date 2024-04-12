@@ -8,9 +8,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 30px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.css-3gr6th-MuiButtonBase-root-MuiTab-root.Mui-selected{
+  color: #fff !important;
+    background: #009688;
+    outline: none;
+    border: none;
+    border-radius: 12px 12px 0 0;
+}
+.css-heg063-MuiTabs-flexContainer{
+  background: #f2f2f2;
+  border-radius: 12px 12px 0 0;
+}
+.css-61sb3q-MuiTabs-indicator{
+  background: none !important;
+    height: 0 !important;
+}
+.css-j7qwjs{
+  width: 100%;
 }
