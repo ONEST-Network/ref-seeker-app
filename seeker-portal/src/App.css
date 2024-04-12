@@ -1,35 +1,37 @@
+@import './variables.css';
+
 .tabs-list{
   .MuiTabs-flexContainer{
-    background-color: #F3F4F5;
-    border-radius: 8px 8px 0 0;
+    background-color: var(--light-grey);
+    border-radius: 0.5rem 0.5rem 0 0;
     .MuiTab-root{
-      color: #000;
+      color: var(--black);
       text-transform: capitalize;  
       &.Mui-selected{
-        background-color: #00A599;
-        color: #fff;
-        border-radius: 8px 8px 0 0;
+        background-color: var(--primary-color);
+        color: var(--white);
+        border-radius: 0.5rem 0.5rem 0 0;
       }
     }
   }
   .MuiTabs-indicator{
-    background: #00A599;
+    background: var(--primary-color);
   }
 }
 .tabs-panel{
-  background-color: #00A599;
-  border-radius: 0 0 8px 8px;
-  padding-top: 8px;
+  background-color: var(--primary-color);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding-top: 0.5rem;
   .MuiBox-root{
-    padding: 8px;
+    padding: 0.5rem;
   }
 }
 
 .tabs-card{
   border: none;
   box-shadow: none !important;
-  border-radius: 8px !important;
-  margin-top: -8px;
+  border-radius: 0.5rem !important;
+  margin-top: -0.5rem;
   .tabs-card-contet{
     padding: 0 !important;
     .card-title{
@@ -37,17 +39,17 @@
       font-weight: bold;
     }
     .card-sub-title{
-      font-size: 14px;
+      font-size: 0.875rem;
     }
     .card-sub-title2{
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: normal;
-      color: #9e9e9e;
+      color: var(--dark-grey);
     }
   }
 }
 .card-image{
-  width: 75px;
+  width: 4.688rem;
 }
 
 .time{
@@ -58,7 +60,7 @@
 }
 .search-box{
   margin-bottom: 1rem;
-  background: #f3f4f5 !important;
+  background: var(--light-grey) !important;
   border-radius: 1rem !important;
   border: none;
   box-shadow: none !important;
