@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import './App.css';
+import './App.scss';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
