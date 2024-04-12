@@ -56,3 +56,10 @@
   justify-content: flex-end;
   align-items: end;
 }
+.search-box{
+  margin-bottom: 1rem;
+  background: #f3f4f5 !important;
+  border-radius: 1rem !important;
+  border: none;
+  box-shadow: none !important;
+}
