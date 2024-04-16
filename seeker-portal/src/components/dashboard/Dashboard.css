@@ -1,0 +1,21 @@
+  
+.tabs-card{
+    border: none;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+  }
+  .card-image{
+    width: 100px;
+  }
+  .tab-panel{
+    background-color: #009688;
+    margin-top: -1px;
+    border-radius: 0 0 12px 12px;
+  }
+  .time{
+    min-width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logo from './assets/logo.svg';
+import logo from '../../assets/logo.svg';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import './App.css';
+import './Dashboard.css';
 import Grid from '@mui/material/Grid';
 
 function CustomTabPanel(props) {
@@ -175,3 +175,6 @@ export default function BasicTabs() {
     </Box>
   );
 }
+
+
+

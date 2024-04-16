@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 
 root.render(
   <ThemeProvider theme={theme}>
