@@ -16,6 +16,6 @@ describe('App Component', () => {
       <App />
     );
 
-    expect(getByText('Home')).toBeInTheDocument(); // Example text
+    expect(getByText('Continue as Agent')).toBeInTheDocument(); // Example text
   });
 });

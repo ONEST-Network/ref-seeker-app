@@ -1,9 +1,9 @@
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
 
 export const pageRoutes = {
   HOME: "/",
-  ABOUT: "/about"
+  LOGIN: "/login",
 };
 
 interface Route {
@@ -23,10 +23,10 @@ export const routes: Route[] = [
     component: Home,
   },
   {
-    key: "about-route",
-    title: "About",
-    path: "/About",
+    key: "login-route",
+    title: "Login",
+    path: "/login",
     enabled: true,
-    component: About,
+    component: Login,
   }
 ];
