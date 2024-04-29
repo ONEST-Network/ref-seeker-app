@@ -1,14 +1,23 @@
-import React from 'react';
-import BasicTabs from './components/dashboard/Dashboard'
 
-import './App.css';
-import Grid from '@mui/material/Grid';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import React from 'react';
+import { routes as appRoutes } from "./routes";
 
 function App() {
   return (
     <div className="App">
-  <BasicTabs/>
-    </div>
+      <Router>
+        <Routes>
+          {appRoutes.map((route) => (
+            <Route
+              key={route.key}
+              path={route.path}
+              element={<route.component />}
+            />
+          ))}
+        </Routes>
+      </Router>    </div>
   );
 }
 

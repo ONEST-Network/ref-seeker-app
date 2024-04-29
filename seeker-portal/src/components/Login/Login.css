@@ -1,0 +1,38 @@
+.otp-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.mobile-container,.otp-container  {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 40px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+}
+
+.loginform-fm input {
+    min-height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 24px;
+    border: 1px solid #a8a8a8;
+    padding: 8px 16px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem
+}
+.mobile-input{
+    margin-bottom: 2rem;
+}
+.react-international-phone-country-selector-button{display: none;}
